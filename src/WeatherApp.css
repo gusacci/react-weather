@@ -1,0 +1,12 @@
+.main-frame {
+  margin-top: 40px;
+
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-around;
+}

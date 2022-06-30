@@ -1,0 +1,13 @@
+.forecast-column {
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  color: #413f42;
+}
+
+.forecast-column div {
+  padding-top: 5px;
+}
