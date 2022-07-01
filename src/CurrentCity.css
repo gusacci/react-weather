@@ -1,20 +1,20 @@
 .current-city {
   margin-top: 50px;
-  margin-right: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 30px;
   font-weight: 200;
   color: #413f42;
+  background-color: #e8f2ea;
+  border-radius: 5px;
+  padding: 10px 20px;
 }
 
 .dayToday {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
-  margin-right: 50px;
-  margin-bottom: 50px;
+  margin: 10px 25px 50px 5px;
   color: #413f42;
   opacity: 0.6;
   font-size: 16px;

@@ -2,8 +2,9 @@
   margin-top: 40px;
 
   padding: 20px;
-  border: 1px solid #dadde1;
+  border: 0.5px solid #5f7464;
   border-radius: 5px;
+  background-color: #f5fef7;
 }
 
 .forecast {
