@@ -1,7 +1,8 @@
 .forecast-column {
   align-items: center;
   justify-content: center;
-  border: 1px solid #dadde1;
+  border: 1px solid #e8f2ea;
+  background-color: #e8f2ea;
   border-radius: 5px;
   padding: 20px;
   text-align: center;

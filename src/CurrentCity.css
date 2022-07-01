@@ -10,8 +10,16 @@
 }
 
 .dayToday {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-right: 50px;
   margin-bottom: 50px;
   color: #413f42;
   opacity: 0.6;
   font-size: 16px;
+}
+
+.dayToday div:last-child {
+  text-transform: capitalize;
 }

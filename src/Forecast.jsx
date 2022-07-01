@@ -1,6 +1,7 @@
 import React from "react";
 import ReactAnimatedWeather from "react-animated-weather";
 import "./forecast.css";
+import axios from "axios";
 
 const Forecast = (props) => {
   return (

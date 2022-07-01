@@ -3,12 +3,13 @@ import "./WeatherApp.css";
 import Search from "./Search";
 import CurrentCity from "./CurrentCity";
 import Forecast from "./Forecast";
+import axios from "axios";
 
 const WeatherApp = () => {
   return (
     <div className="main-frame">
       <Search />
-      <CurrentCity cityName="Kiev" country="Ukraine" temp="17" />
+      <CurrentCity defaultCity="Lviv" country="Ukraine" temp="17" />
       <div className="forecast">
         <Forecast weekDay="Mon" temp="20" icon="CLEAR_DAY" />
         <Forecast weekDay="Tue" temp="21" icon="RAIN" />
