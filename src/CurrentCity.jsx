@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./CurrentCity.css";
+import FormattedDate from "./FormattedDate";
 import ReactAnimatedWeather from "react-animated-weather";
 import axios from "axios";
 
@@ -9,7 +10,7 @@ const CurrentCity = (props) => {
     console.log(response.data);
     setWeatherData({
       ready: true,
-      date: "Monday, 14:45",
+      date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
@@ -36,7 +37,9 @@ const CurrentCity = (props) => {
           />
         </div>
         <div className="dayToday">
-          <div>{weatherData.date} </div>
+          <div>
+            <FormattedDate date={weatherData.date} />
+          </div>
           <div>Max:{Math.round(weatherData.maxTemp)}°C</div>
           <div>Min:{Math.round(weatherData.minTemp)}°C</div>
 
