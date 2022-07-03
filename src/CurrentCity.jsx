@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./CurrentCity.css";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
-import axios from "axios";
+import Temperature from "./Temperature";
 
 const CurrentCity = (props) => {
   return (
@@ -11,7 +11,8 @@ const CurrentCity = (props) => {
         <div>
           <strong>{props.data.city}</strong>
         </div>
-        <div>{Math.round(props.data.temperature)} °C</div>
+
+        <Temperature celsius={props.data.temperature} />
         <WeatherIcon code={props.data.icon} />
       </div>
       <div className="dayToday">
