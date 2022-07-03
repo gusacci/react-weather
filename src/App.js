@@ -4,7 +4,7 @@ import WeatherApp from "./WeatherApp";
 function App() {
   return (
     <div>
-      <WeatherApp />
+      <WeatherApp defaultCity="Lviv" />
     </div>
   );
 }
