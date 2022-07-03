@@ -16,7 +16,7 @@ const WeatherApp = (props) => {
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
       city: response.data.name,
-      iconUrl: `http://openweathermap.org/img/wn/01d@2x.png`,
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       maxTemp: response.data.main.temp_max,
       minTemp: response.data.main.temp_min,
     });
