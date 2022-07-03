@@ -52,6 +52,10 @@ const WeatherApp = (props) => {
         <CurrentCity data={weatherData} />
         <div className="forecast">
           <Forecast weekDay="Mon" temp="20" icon="CLEAR_DAY" />
+          <Forecast weekDay="Tue" temp="26" icon="CLOUDY" />
+          <Forecast weekDay="Wed" temp="28" icon="CLEAR_DAY" />
+          <Forecast weekDay="Thu" temp="22" icon="CLEAR_DAY" />
+          <Forecast weekDay="Fri" temp="25" icon="CLEAR_DAY" />
         </div>
       </div>
     );

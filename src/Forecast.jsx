@@ -1,7 +1,6 @@
 import React from "react";
 import ReactAnimatedWeather from "react-animated-weather";
 import "./forecast.css";
-import axios from "axios";
 
 const Forecast = (props) => {
   return (
@@ -11,7 +10,7 @@ const Forecast = (props) => {
         {" "}
         <ReactAnimatedWeather
           icon={props.icon}
-          color="goldenrod"
+          color="#ffb200"
           size={30}
           animate={true}
         />{" "}
