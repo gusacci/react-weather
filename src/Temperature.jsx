@@ -16,7 +16,7 @@ const Temperature = (props) => {
         {Math.round(props.celsius)}
         <sup>
           °C
-          <a href="#" onClick={convertToFahrenheit}>
+          <a href="/" onClick={convertToFahrenheit}>
             {" "}
             | °F
           </a>
@@ -30,7 +30,7 @@ const Temperature = (props) => {
         {Math.round(fahrenheit)}
         <sup>
           °F{" "}
-          <a href="#" onClick={convertToCelcius}>
+          <a href="/" onClick={convertToCelcius}>
             | °C
           </a>
         </sup>
