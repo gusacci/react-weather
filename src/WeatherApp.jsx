@@ -37,26 +37,52 @@ const WeatherApp = (props) => {
 
   if (weatherData.ready) {
     return (
-      <div className="main-frame">
-        <div>
-          <form className="search" onSubmit={handleSubmit}>
-            <input
-              type="text"
-              placeholder="Type a city ..."
-              onChange={handleCityChange}
-            />
-            <button type="submit">Search</button>
-            <button>📍</button>
-          </form>
+      <div>
+        <div className="main-frame">
+          <div>
+            <form className="search" onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="Type a city ..."
+                onChange={handleCityChange}
+              />
+              <button type="submit">Search</button>
+              <button>📍</button>
+            </form>
+          </div>
+          <CurrentCity data={weatherData} />
+          <div className="forecast">
+            <Forecast weekDay="Mon" temp="20" icon="CLEAR_DAY" />
+            <Forecast weekDay="Tue" temp="26" icon="CLOUDY" />
+            <Forecast weekDay="Wed" temp="28" icon="CLEAR_DAY" />
+            <Forecast weekDay="Thu" temp="22" icon="CLEAR_DAY" />
+            <Forecast weekDay="Fri" temp="25" icon="CLEAR_DAY" />
+          </div>
         </div>
-        <CurrentCity data={weatherData} />
-        <div className="forecast">
-          <Forecast weekDay="Mon" temp="20" icon="CLEAR_DAY" />
-          <Forecast weekDay="Tue" temp="26" icon="CLOUDY" />
-          <Forecast weekDay="Wed" temp="28" icon="CLEAR_DAY" />
-          <Forecast weekDay="Thu" temp="22" icon="CLEAR_DAY" />
-          <Forecast weekDay="Fri" temp="25" icon="CLEAR_DAY" />
-        </div>
+        <footer>
+          <p>
+            This project was coded by{" "}
+            <a
+              href="mailto:anastaiagusakk@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Anastasia Gusak
+            </a>{" "}
+            and is open-sourced on{" "}
+            <a
+              href="https://github.com/gusacci/react-weather"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub{" "}
+            </a>{" "}
+            and hosted on{" "}
+            <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">
+              Netlify
+            </a>
+          </p>
+        </footer>
       </div>
     );
   } else {
