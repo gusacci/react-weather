@@ -1,6 +1,7 @@
 .forecast-column {
+  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   border: 1px solid #e8f2ea;
   background-color: #e8f2ea;
   border-radius: 5px;
@@ -11,4 +12,12 @@
 
 .forecast-column div {
   padding-top: 5px;
+}
+
+.forecast-column span {
+  opacity: 0.7;
+}
+
+.temperature {
+  font-size: 12px;
 }

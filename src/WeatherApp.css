@@ -42,11 +42,6 @@
   flex: 1;
 }
 
-.forecast {
-  display: flex;
-  justify-content: space-around;
-}
-
 footer {
   opacity: 0.7;
   font-size: 10px;

@@ -13,7 +13,7 @@ const CurrentCity = (props) => {
         </div>
 
         <Temperature celsius={props.data.temperature} />
-        <WeatherIcon code={props.data.icon} />
+        <WeatherIcon code={props.data.icon} size={60} />
       </div>
       <div className="dayToday">
         <div>

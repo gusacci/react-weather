@@ -11,6 +11,7 @@ const WeatherApp = (props) => {
   const showWeather = (response) => {
     setWeatherData({
       ready: true,
+      coord: response.data.coord,
       date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       description: response.data.weather[0].description,
@@ -51,12 +52,8 @@ const WeatherApp = (props) => {
             </form>
           </div>
           <CurrentCity data={weatherData} />
-          <div className="forecast">
-            <Forecast weekDay="Mon" temp="20" icon="CLEAR_DAY" />
-            <Forecast weekDay="Tue" temp="26" icon="CLOUDY" />
-            <Forecast weekDay="Wed" temp="28" icon="CLEAR_DAY" />
-            <Forecast weekDay="Thu" temp="22" icon="CLEAR_DAY" />
-            <Forecast weekDay="Fri" temp="25" icon="CLEAR_DAY" />
+          <div>
+            <Forecast coords={weatherData.coord} />
           </div>
         </div>
         <footer>
