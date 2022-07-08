@@ -48,7 +48,6 @@ const WeatherApp = (props) => {
                 onChange={handleCityChange}
               />
               <button type="submit">Search</button>
-              <button>📍</button>
             </form>
           </div>
           <CurrentCity data={weatherData} />

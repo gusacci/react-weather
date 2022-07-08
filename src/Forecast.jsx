@@ -29,7 +29,7 @@ const Forecast = (props) => {
   } else {
     let lon = props.coords.lon;
     let lat = props.coords.lat;
-    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly,minutely,alerts&appid=95d97ccda682cdc0d4123003baefd848&units=metric`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly,minutely,alerts&appid=8dcad96194c2621f5d4994f270da4f09&units=metric`;
     axios.get(apiUrl).then(handleResponse);
 
     return null;
